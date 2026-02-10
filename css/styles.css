@@ -141,8 +141,8 @@ body {
 
 .bb-header-container {
     display: flex;
-    flex-direction: column;  
-    align-items: center;     
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     background-color: #00332a;
@@ -157,8 +157,8 @@ body {
     text-align: center;
     padding: 25px 20px;
     border-bottom: 1px solid var(--bb-border);
-    margin-top: 20px;  
-    width: auto;       
+    margin-top: 20px;
+    width: auto;
 }
 
 .bb-tagline-container p {
@@ -234,6 +234,36 @@ body {
     color: var(--bb-text-light);
 }
 
+.research-download-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.research-download-button {
+    display: inline-block;
+    background-color: #00332a;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.research-download-button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.research-download-button:active {
+    transform: translateY(0);
+}
+
 /* Ensure padding and borders don't add to the width */
 * {
     box-sizing: border-box;
@@ -243,12 +273,15 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px; /* Reduced padding for mobile */
+    padding: 20px;
+    /* Reduced padding for mobile */
     background-color: #fff;
     font-family: 'Inter', sans-serif;
     color: #333;
     line-height: 1.6;
 }
+
+
 
 .about-header {
     border-bottom: 2px solid #00332a;
@@ -257,7 +290,8 @@ body {
 }
 
 .about-name {
-    font-size: 1.8rem; /* Scaled down for mobile */
+    font-size: 1.8rem;
+    /* Scaled down for mobile */
     color: #00332a;
     margin: 0;
     text-transform: uppercase;
@@ -347,8 +381,8 @@ body {
         font-size: 1.4rem;
     }
 
-    .about-text, 
-    .about-list-item, 
+    .about-text,
+    .about-list-item,
     .about-job-meta {
         font-size: 1rem;
     }
