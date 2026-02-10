@@ -121,8 +121,9 @@
     </div>
 
    <script>
+ <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // --- Mobile Menu Logic ---
+        // --- 1. Mobile Menu Logic ---
         const menuToggle = document.getElementById('mobile-menu');
         const navList = document.getElementById('nav-list');
 
@@ -139,36 +140,39 @@
             });
         }
 
-        // --- Map Logic ---
+        // --- 2. Map Logic ---
         // Initialize the map
         var map = L.map('map').setView([-36.8485, 174.7633], 10);
 
         // Add the base map tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; OpenStreetMap'
+            attribution: '© OpenStreetMap'
         }).addTo(map);
 
-        // Define the RDR red icon
-        var rdrIcon = L.divIcon({
-            className: 'rdr-marker',
-            iconSize: [12, 12],
-            iconAnchor: [6, 6]
+        // Define a VIBRANT RED SVG Marker (Pure Red #FF0000)
+        var pureRedMarker = L.divIcon({
+            className: 'custom-red-marker',
+            html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                     <path fill="#FF0000" stroke="#000000" stroke-width="1" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                     <circle fill="#FFFFFF" cx="12" cy="9" r="3"/>
+                   </svg>`,
+            iconSize: [32, 32],
+            iconAnchor: [16, 32]
         });
 
-        // Load the KML and apply the red icon
-        var runLayer = omnivore.kml('rdr2map.kml')
+        // Load the KML and apply the pure red icon
+        var runLayer = omnivore.kml('rdr2map.kml?v=' + Date.now())
             .on('ready', function () {
-                map.fitBounds(runLayer.getBounds());
+                map.fitBounds(this.getBounds());
                 
-                // Swap blue pins for red dots
-                runLayer.eachLayer(function(layer) {
+                this.eachLayer(function(layer) {
                     if (layer instanceof L.Marker) {
-                        layer.setIcon(rdrIcon);
+                        layer.setIcon(pureRedMarker);
                     }
                 });
             })
             .on('error', function(e) {
-                console.error('KML failed to load:', e);
+                console.error('KML failed to load. Ensure rdr2map.kml is in the root folder.');
             })
             .addTo(map);
     });
