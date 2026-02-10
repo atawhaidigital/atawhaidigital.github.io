@@ -120,50 +120,47 @@
         </div>
     </div>
 
-  <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile Menu Logic
-            const menuToggle = document.getElementById('mobile-menu');
-            const navList = document.getElementById('nav-list');
-            if (menuToggle && navList) {
-                menuToggle.addEventListener('click', () => {
-                    navList.classList.toggle('is-active');
-                });
-            }
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Mobile Menu ---
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', () => navList.classList.toggle('is-active'));
+        }
 
-            // Map Initialization
-            var map = L.map('map').setView([-36.8485, 174.7633], 10);
+        // --- Map Initialization ---
+        var map = L.map('map').setView([-36.8485, 174.7633], 10);
 
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap'
-            }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-            // Define the Red Marker Icon
-            var redIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
-                popupAnchor: [1, -34],
-                shadowSize: [41, 41]
-            });
-
-            // Load KML and apply red markers
-            var runLayer = omnivore.kml('rdr2map.kml')
-                .on('ready', function () {
-                    map.fitBounds(runLayer.getBounds());
-                    runLayer.eachLayer(function(layer) {
-                        if (layer instanceof L.Marker) {
-                            layer.setIcon(redIcon);
-                        }
-                    });
-                })
-                .on('error', function(e) {
-                    console.error('KML failed to load. Ensure rdr2map.kml is in the root folder.');
-                })
-                .addTo(map);
+        // --- Custom Deep Red SVG Marker ---
+        var rdrRedMarker = L.divIcon({
+            className: 'rdr-pin-svg',
+            html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                     <path class="rdr-pin-path" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                     <circle fill="#2e1a05" cx="12" cy="9" r="2.5"/>
+                   </svg>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 30]
         });
-    </script>
+
+        // --- Load KML ---
+        var runLayer = omnivore.kml('rdr2map.kml')
+            .on('ready', function () {
+                map.fitBounds(this.getBounds());
+                this.eachLayer(layer => {
+                    if (layer instanceof L.Marker) {
+                        layer.setIcon(rdrRedMarker);
+                    }
+                });
+            })
+            .on('error', function(e) {
+                console.error('KML failed to load. Ensure rdr2map.kml is in the root folder.');
+            })
+            .addTo(map);
+    });
+</script>
 
 </body>
 
