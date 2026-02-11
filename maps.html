@@ -124,7 +124,7 @@
                 </p>
         </main>
 
-        <footer class="bb-footer">
+              <footer class="bb-footer">
             <div class="main-footer">
                 <div class="footer-top">
                     <h2 class="bb-site-title" style="color:white;">Ashish Digital</h2>
@@ -133,14 +133,21 @@
                         <a href="https://www.linkedin.com/in/ashishbijwe/" target="_blank">In</a> <a
                             href="https://www.kaggle.com/digitalashish" target="_blank">Ka</a>
                     </div>
+                    <a href="#" class="back-to-top">Back to Top</a>
                 </div>
 
                 <hr class="footer-divider">
 
-                <div class="footer-middle">
-
-                </div>
                 <div class="footer-left">
+                    <div class="footer-column">
+                        <ul>
+                            <li><strong>Location:</strong> Auckland, New Zealand</li>
+                            <li><strong>Status:</strong> Open for Work</li>
+                            <li><strong>Specialty:</strong> Data-Driven Digital Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
                     <div class="footer-column">
                         <ul>
                             <li><a href="tel:+64204211398">Mobile: +64204211398</a></li>
@@ -148,19 +155,15 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="footer-right">
-                    <br>
-                    <a href="#" class="back-to-top">Back to Top</a>
-                </div>
             </div>
         </footer>
 
         <div class="bb-copyright">
-            &copy; 2026 Ashish Digital | Optimising Web
+            &copy; <span id="year"></span> Ashish Digital | Optimising Web | All rights reserved <br>
+            <span style="opacity: 0.8; display: inline-block; margin-top: 10px;">Website Theme: Atawhai by Ashish
+                Bijwe</span>
         </div>
     </div>
-
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         // --- Mobile Menu ---
@@ -201,6 +204,13 @@
             })
             .addTo(map);
     });
+
+    
+        // Update the year dynamically
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
 </script>
 
 </body>
