@@ -238,6 +238,18 @@ body {
     font-size: 0.9rem;
 }
 
+main li,
+article li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+main li strong,
+article li strong {
+    color: #8b0000;
+}
+
 .sidebar-widget {
     margin-bottom: 30px;
     padding-bottom: 20px;
