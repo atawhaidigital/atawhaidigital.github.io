@@ -165,52 +165,47 @@
         </div>
     </div>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // --- Mobile Menu ---
-        const menuToggle = document.getElementById('mobile-menu');
-        const navList = document.getElementById('nav-list');
-        if (menuToggle && navList) {
-            menuToggle.addEventListener('click', () => navList.classList.toggle('is-active'));
-        }
+   document.addEventListener('DOMContentLoaded', () => {
+    // 1. Initialize the Map
+    var map = L.map('map').setView([-36.8485, 174.7633], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; OpenStreetMap'
+    }).addTo(map);
 
-        // --- Map Initialization ---
-        var map = L.map('map').setView([-36.8485, 174.7633], 10);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-        // --- Custom Deep Red SVG Marker ---
-        var rdrRedMarker = L.divIcon({
-            className: 'rdr-pin-svg',
-            html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-                     <path class="rdr-pin-path" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                     <circle fill="#2e1a05" cx="12" cy="9" r="2.5"/>
-                   </svg>`,
-            iconSize: [30, 30],
-            iconAnchor: [15, 30]
-        });
-
-        // --- Load KML ---
-        var runLayer = omnivore.kml('rdr2map.kml')
-            .on('ready', function () {
-                map.fitBounds(this.getBounds());
-                this.eachLayer(layer => {
-                    if (layer instanceof L.Marker) {
-                        layer.setIcon(rdrRedMarker);
-                    }
-                });
-            })
-            .on('error', function(e) {
-                console.error('KML failed to load. Ensure rdr2map.kml is in the root folder.');
-            })
-            .addTo(map);
+    // 2. Define the Custom Deep Red SVG Marker
+    var rdrRedMarker = L.divIcon({
+        className: 'rdr-pin-svg',
+        html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                 <path class="rdr-pin-path" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#8b0000"/>
+                 <circle fill="#2e1a05" cx="12" cy="9" r="2.5"/>
+               </svg>`,
+        iconSize: [30, 30],
+        iconAnchor: [15, 30]
     });
 
-    
-        // Update the year dynamically
-        const yearElement = document.getElementById('year');
-        if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
-        }
+    // 3. Load KML and Apply Styles/Popups
+    var runLayer = omnivore.kml('rdr2map.kml')
+        .on('ready', function () {
+            // Automatically zoom to show all KML points
+            map.fitBounds(this.getBounds());
+            
+            this.eachLayer(layer => {
+                // Apply the custom red icon to all markers
+                if (layer instanceof L.Marker) {
+                    layer.setIcon(rdrRedMarker);
+                    
+                    // EXTRA: Bind a popup using the name from your KML data
+                    if (layer.feature && layer.feature.properties && layer.feature.properties.name) {
+                        layer.bindPopup(`<strong>${layer.feature.properties.name}</strong>`);
+                    }
+                }
+            });
+        })
+        .on('error', function(e) {
+            console.error('KML failed to load. Ensure rdr2map.kml is in the root folder.');
+        })
+        .addTo(map);
+});
 </script>
 
 </body>
