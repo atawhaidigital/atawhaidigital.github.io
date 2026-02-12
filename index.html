@@ -98,7 +98,7 @@
 
         <main class="bb-main">
             <div class="bb-content" id="about">
-                <h2><b>Kia ora</b> | My name is Ashish</h2>
+               <h2><b id="dynamic-greeting">Kia ora</b> | My name is Ashish</h2>
                 <p>A data-driven marketing enthusiast, I leverage analytics to craft
                     impactful digital marketing strategies across channels, fostering thriving
                     online communities with my passion for customer satisfaction. My expertise
@@ -283,6 +283,25 @@
             yearElement.textContent = new Date().getFullYear();
         }
     </script>
+
+    //Greetings
+    const updateGreeting = () => {
+    const hour = new Date().getHours();
+    const greetingElement = document.getElementById('dynamic-greeting');
+    
+    let greeting = "Kia ora"; // Default
+
+    if (hour >= 5 && hour < 12) {
+        greeting = "Mōrena";
+    } else if (hour >= 18 || hour < 5) {
+        greeting = "Pō mārie";
+    }
+
+    greetingElement.innerText = greeting;
+};
+
+// Run the function when the page loads
+window.onload = updateGreeting;
 
 </body>
 
