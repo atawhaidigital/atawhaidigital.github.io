@@ -52,4 +52,8 @@
     <loc>https://atawhaidigital.github.io/llm.txt</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://atawhaidigital.github.io/linkinbio.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
