@@ -1,59 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://atawhaidigital.github.io/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/maps.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/impactofonlinereviews.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/digitalmarketingvision.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/google-my-business.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/onlinereviews.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/customer-experience-accessibility.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/customer-experience-chatbot.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/bring-fine-dining-to-your-home.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/deliveryandonlineexperience.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atawhaidigital.github.io/Data-Driven%20Retail-Bridging%20the%20Gap%20with%20Insights%20and%20Optimised%20Staffing.html</loc>
-    <priority>0.7</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<url>
+  <loc>https://atawhaidigital.github.io/</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/index.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/impactofonlinereviews.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/digitalmarketingvision.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/Data-Driven%20Retail-Bridging%20the%20Gap%20with%20Insights%20and%20Optimised%20Staffing.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/google-my-business.html</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/onlinereviews.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/customer-experience-accessibility.html</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/customer-experience-chatbot.html</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/bring-fine-dining-to-your-home.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/deliveryandonlineexperience.html</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/about.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/maps.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/projectharakeke.html</loc>
+  <lastmod>2026-02-23T06:58:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://atawhaidigital.github.io/Impact-of-Online-Reviews-On-Customer-Purchase-Decisions-for-Accommodations.pdf</loc>
+  <lastmod>2026-02-23T06:58:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
   <url>
     <loc>https://atawhaidigital.github.io/llm.txt</loc>
+    <lastmod>2026-02-23T06:58:40+00:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://atawhaidigital.github.io/linkinbio.html</loc>
+    <lastmod>2026-02-23T06:58:40+00:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
