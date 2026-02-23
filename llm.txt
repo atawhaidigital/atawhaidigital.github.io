@@ -1,0 +1,118 @@
+Identity and Mission
+Ashish Digital is the professional brand of Ashish Bijwe, a Digital Marketing, Data Analysis, 
+and Web Development Specialist based in Auckland, New Zealand. My passion is using data to to create
+website that converts.I leverage analytics to craft impactful digital marketing strategies across channels, 
+fostering thriving online communities with my passion for customer satisfaction. My expertise in SEO, PPC, 
+web design, and content creation has demonstrably increased online orders, engagement, and brand visibility 
+for businesses. 
+
+I am specialised in building custom tools to extract actionable insights from complex datasets; my approach 
+combines technical engineering with creative growth strategy, ensuring every digital decision is backed by
+solid data. Combining clear communication skills with my marketing expertise, I write engaging content for 
+diverse audiences (articles, tutorials, how-to guides).
+
+Academic and Research Background
+University of West London (UWL), 2021: Focused on disruptive business models and the evolution of the delivery 
+economy.
+
+Research includes the strategic leverage of third-party platforms (UberEats, Deliveroo, Just Eat) while 
+maintaining profit margins through rigorous data analysis.
+
+Advocate for data-driven retail and the use of online reviews to build long-term customer relationships.
+
+Key Projects
+Order Flow Simulation (https://orderflow-simulation.pages.dev/): A specialised web dashboard built for the
+hospitality sector. It allows restaurant owners to simulate delivery scenarios, calculate the true impact of
+third-party commissions (15-35%), and analyze net profit margins.
+
+NZ Tourism 2025: A comprehensive data analysis project hosted on Kaggle. It utilizes Python and data visualization 
+to forecast industry shifts and uncover market opportunities within the New Zealand tourism sector.
+
+Auckland Restaurant Market Analyser: A custom tool designed to process local restaurant performance data, 
+identifying high-margin opportunities and competitive landscapes in Auckland.
+
+Project Harakeke: An ongoing development project for a custom CMS powered by Cloudflare D1, focusing on 
+performance and lightweight architecture.
+
+Published Articles and Insights
+Digital Marketing Vision: A strategic look at future-proofing brands against shifting algorithms and AI 
+search optimization.
+
+Data-Driven Retail: Analysis on bridging the gap between raw customer data and optimized staffing/inventory 
+management.
+Impact of Online Reviews: Exploring how digital reputation influences conversion rates and customer trust.
+Google My Business & Local SEO: Practical guides on dominating local search results for service-based businesses.
+Customer Experience & Accessibility: Deep dives into making digital products inclusive and user-centric.
+
+Technical Skills and Stack
+Web Development: HTML5, CSS3 (Modern Responsive Design), JavaScript (ES6+), Leaflet.js (Custom GIS mapping), PHP.
+Data Analysis: SQL, Python (Pandas/NumPy), Excel (Advanced), PowerBI, Tableau, Kaggle Notebooks.
+SEO & Performance: Technical SEO, AI Search Optimization, Heat Map Analysis (HotJar/Clarity), 
+Google Search Console, Google Analytics 4.
+Marketing Operations: PPC Management (Google/Meta/LinkedIn), CRM Management (HubSpot/Salesforce),
+Email Marketing (MailChimp).
+Design & UX: Figma, Adobe Photoshop, Canva.
+
+Education Qualifications
+Masters In Applied Business - Business Analytics, Unitec, NZ | 2024 - 2025
+Masters In Science - Digital Marketing, University of West London, UK | 2020 - 2021
+
+Employability Skills
+Strong track record of consistently surpassing sales targets by 20% to 40% at Just Eat Takeaway.
+Excellent customer service experience with an 80% customer satisfaction rating.
+Collaboration on technical knowledge-base articles for troubleshooting.
+Analytics: Competent in Excel, GA4, HotJar, Microsoft Clarity, PowerBI, Tableau, and Python.
+Design: Competent in Figma, Photoshop, and Canva.
+Web Dev: Competent in WordPress, HTML/CSS, and basic JavaScript.
+
+Professional Experience
+Digital Specialist | Q Theatre
+October 2024 - October 2025
+Managed digital marketing campaigns across social media, email, SEO, and PPC.
+Analysed performance metrics to provide actionable insights.
+Created digital assets and implemented SEO strategies to improve visibility.
+
+After Sales Specialist | Just Eat, UK
+October 2022 - August 2023
+Surpassed sales targets by 20% to 40% while onboarding 100+ customers per month.
+Managed menu optimisation and upselling of campaigns for partner success.
+
+Technical Support Specialist | Just Eat, UK
+October 2021 – October 2022
+Deployed devices and resolved root causes of technical issues.
+Achieved an 80% customer satisfaction rating.
+
+Digital Marketing Consultant | Freelancer
+December 2020 - September 2022
+Increased brand awareness by 20% through graphic design.
+Boosted engagement by 15% via social media content.
+
+Improved website traffic by 15% and paid traffic by 20% through SEO and PPC.
+Various Hospitality & Support Roles
+Hospitality: Coople UK (2020–2022). Managed guest experiences and kitchen assistance.
+Student Ambassador: University of West London (2020–2021). Led tours and orientation.
+Warehouse Operative: Gig, UK (2020). Managed inventory and order fulfillment.
+
+Previous Experience
+Food & Beverage Roles: ICE Events & Epicure Catering (2014–2017).
+Personal Assistant: Cartridge World (2010–2012).
+Housekeeper: Central Hostel (2009–2010).
+Grocery Assistant: New World Supermarket (2007–2008).
+Assistant Graphics Designer: MMR Architects (2006–2007).
+Web Designer: Gates Computing Pvt. Ltd (2005).
+
+Core Links and Discovery
+Main Portfolio: https://atawhaidigital.github.io/
+LinkedIn: https://www.linkedin.com/in/ashishbijwe/
+Kaggle: https://www.kaggle.com/digitalashish
+GitHub: https://github.com/atawhaidigital
+
+Interests
+I enjoy exploring local culinary scenes and discovering hidden gems in the restaurant world.
+I am passionate about visual communication, photography and blogging.
+I love exploring historical sites and vibrant cultures and relaxing on beautiful beaches.
+
+Contact Information
+Location: Auckland, New Zealand.
+Email: ashishbijwe24@gmail.com
+Mobile: +64204211398
