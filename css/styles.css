@@ -729,6 +729,7 @@ article li strong {
 
 /* --- Print Stylings --- */
 @media print {
+
     /* Hide non-essential elements */
     .bb-navbar,
     .about-download-container,
@@ -737,10 +738,9 @@ article li strong {
     #backToTop,
     .back-to-top,
     #hubspot-messages-iframe-container,
-    .hubspot-messages-iframe-container, 
-    #hs-messages-wrapper {              
+    .hubspot-messages-iframe-container,
+    #hs-messages-wrapper {
         display: none !important;
-    }
     }
 
     /* Layout adjustments */
