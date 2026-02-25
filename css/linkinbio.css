@@ -1,6 +1,6 @@
 /* Apply your primary fonts */
 body {
-    background-color: #00332a;
+    background-color: #e6e6e6B3;
     background-image: url("../images/digitalmarketingbg.jpg");
     font-family: "Inter", Helvetica, Arial, sans-serif;
     color: #ffffff;
@@ -12,7 +12,7 @@ body {
     background-blend-mode: overlay;
 }
 
-.linkinbio-container {
+/* .linkinbio-container {
     max-width: 480px;
     margin: 0 auto;
     padding-left: 20px;
@@ -21,7 +21,25 @@ body {
     background: radial-gradient(circle at center, #027a32e8 100%, #000000 100%);
     min-height: 100vh;
     border-radius: 20px;
+} */
 
+.linkinbio-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: transparent;
+    /* background-color: #04605874; */
+    backdrop-filter: blur(10px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    box-shadow: 0 8px 32px 0 rgba(45, 44, 44, 0.37);
+    /* background-image: url("../images/digitalmarketingbg.jpg"); */
+    min-height: 100vh;
+    border-radius: 20px;
+    /* background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* Profile Section */
@@ -29,6 +47,16 @@ body {
     text-align: center;
     margin-bottom: 30px;
     color: #ffffff;
+    background-color: #00332a;
+    text-align: center;
+    padding: 1px 0;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 40px;
 }
 
 .logo {
@@ -45,6 +73,7 @@ body {
     font-weight: 800;
     letter-spacing: -0.02em;
     font-size: 22px;
+    color: #ffffff;
 }
 
 .tagline {
@@ -55,7 +84,6 @@ body {
 }
 
 /* Interactive Link Buttons */
-
 .link-group {
     margin-bottom: 25px;
 }
@@ -68,19 +96,23 @@ body {
 }
 
 .link-item {
-    background-color: #f1f28a;
+    background: transparent;
     padding: 18px;
     border-radius: 25px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 2px solid #333;
-    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border: 1px solid #000000;
+    color: #000000
+}
 
+.link-item:hover {
+    background-color: transparent;
+    color: 000;
 }
 
 .link-description {
     margin: 10px 20px 0 20px;
     font-size: 15px;
-    color: #fff;
+    color: #000000;
     line-height: 1.4;
     text-align: center;
     opacity: 0.9;
@@ -88,22 +120,22 @@ body {
 
 /* Hover/Active states - crucial for UX */
 .link-item:hover {
-    transform: translate(-2px, -2px);
+    transform: translateY(-2px);
     box-shadow: 6px 6px 0px #333;
     background-color: #f4f5a3;
-}
 
-.link-item:active {
-    transform: translate(2px, 2px);
-    box-shadow: 0px 0px 0px #333;
 }
 
 .link-item a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: 700;
     font-size: 16px;
     display: block;
+}
+
+.link-item:hover a {
+    color: #000000;
 }
 
 .divider {
@@ -116,6 +148,7 @@ body {
 
 /* Social Icons */
 .social-links {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -131,7 +164,7 @@ body {
 
 .social-links img:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Footer */
