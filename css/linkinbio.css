@@ -1,20 +1,27 @@
 /* Apply your primary fonts */
 body {
-    background-color: #000000;
+    background-color: #00332a;
+    background-image: url("../images/digitalmarketingbg.jpg");
     font-family: "Inter", Helvetica, Arial, sans-serif;
     color: #ffffff;
     margin: 0;
     padding: 20px 0;
     line-height: 1.5;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 
 .linkinbio-container {
     max-width: 480px;
     margin: 0 auto;
-    padding: 20px;
-    /* Radial gradient: center glow to dark edges */
-    background: radial-gradient(circle at center, #027a32e8 65%, #000000 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background: radial-gradient(circle at center, #027a32e8 100%, #000000 100%);
     min-height: 100vh;
+    border-radius: 20px;
+
 }
 
 /* Profile Section */
@@ -63,7 +70,7 @@ body {
 .link-item {
     background-color: #f1f28a;
     padding: 18px;
-    border-radius: 35px;
+    border-radius: 25px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 2px solid #333;
     color: #333;
@@ -129,9 +136,20 @@ body {
 
 /* Footer */
 .footer {
+    background-color: #00332a;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    padding: 1px 0;
+    color: #ccc;
     font-size: 13px;
     font-weight: 500;
-    color: #888;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.footer-text {
+    font-size: 10px;
+    margin-top: 10px;
+    opacity: 0.7;
 }
