@@ -737,10 +737,14 @@ article li strong {
     .bb-tagline-container,
     #backToTop,
     .back-to-top,
+    #hs-script-loader,
     #hubspot-messages-iframe-container,
     .hubspot-messages-iframe-container,
-    #hs-messages-wrapper {
+    #hs-messages-wrapper,
+    iframe[id^="hubspot-messages-iframe"],
+    [id^="hs-messages-"] {
         display: none !important;
+        visibility: hidden !important;
     }
 
     /* Layout adjustments */
