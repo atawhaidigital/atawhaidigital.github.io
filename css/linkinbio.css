@@ -56,7 +56,6 @@ body {
     margin-top: -40px;
     margin-left: -20px;
     margin-right: -20px;
-    border-radius: 20px 20px 0px 0px;
     padding-top: 40px;
 }
 
@@ -182,7 +181,6 @@ body {
     font-weight: 500;
     margin-left: -20px;
     margin-right: -20px;
-    border-radius: 0 0 20px 20px;
 }
 
 .footer-text {
