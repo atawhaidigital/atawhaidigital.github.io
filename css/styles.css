@@ -188,7 +188,7 @@ body {
     display: inline-block;
     padding: 12px 30px;
     background-color: #fdd31c;
-    color:#000000;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -232,6 +232,12 @@ body {
     margin-bottom: 20px;
 }
 
+.bb-content-divider {
+    border: 0;
+    border-top: 1px solid var(--bb-border);
+    margin: 20px 0;
+}
+
 .bb-sidebar {
     flex: 1;
     padding-left: 40px;
@@ -247,7 +253,7 @@ article li {
 
 main li strong,
 article li strong {
-     color: #0b4e02;
+    color: #0b4e02;
 }
 
 .sidebar-widget {
@@ -303,7 +309,6 @@ article li strong {
     transform: translateY(0);
 }
 
-/* Ensure padding and borders don't add to the width */
 * {
     box-sizing: border-box;
 }
@@ -313,11 +318,12 @@ article li strong {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    /* Reduced padding for mobile */
     background-color: #fff;
     font-family: 'Inter', sans-serif;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -330,7 +336,6 @@ article li strong {
 
 .about-name {
     font-size: 1.8rem;
-    /* Scaled down for mobile */
     color: #00332a;
     margin: 0;
     text-transform: uppercase;
@@ -342,6 +347,48 @@ article li strong {
     font-size: 0.9rem;
     color: #666;
     margin: 8px 0 0;
+}
+
+.about-download-btn {
+    float: right;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00332a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #00332a;
+}
+
+.print-cv-btn {
+    float: right;
+    margin-top: 15px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    color: #00332a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.print-cv-btn:hover {
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #00332a;
+    color: #00332a;
+    border: 1px solid #00332a;
+
+}
+
+.about-download-btn:hover {
+    background-color: transparent;
+    color: #00332a;
 }
 
 .about-section {
@@ -426,6 +473,7 @@ article li strong {
         font-size: 1rem;
     }
 }
+
 /* --- Map --- */
 #map {
     height: 600px;
@@ -442,16 +490,18 @@ article li strong {
     height: 12px;
     border-radius: 50%;
     border: 2px solid #2e1a05;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .rdr-pin-svg {
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .rdr-pin-path {
-    fill: #8B0000; /* Deep RDR Red */
-    stroke: #2e1a05; /* Dark ink border */
+    fill: #8B0000;
+    /* Deep RDR Red */
+    stroke: #2e1a05;
+    /* Dark ink border */
     stroke-width: 1.5;
 }
 
@@ -636,6 +686,23 @@ article li strong {
         gap: 40px;
     }
 
+    /* Back to Top button */
+    .back-to-top {
+        display: inline-block;
+        border: 1px solid white;
+        padding: 8px 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .back-to-top:hover {
+        background: white;
+        color: #00332a;
+    }
+
     .footer-left,
     .footer-right {
         flex: 0 0 100%;
@@ -648,5 +715,97 @@ article li strong {
 
     .footer-divider {
         margin: 10px 0 20px 0;
+    }
+}
+
+/* --- Print Stylings --- */
+@media print {
+
+    /* Hide non-essential elements */
+    .bb-navbar,
+    .about-download-container,
+    .bb-footer,
+    .bb-tagline-container,
+    #backToTop,
+    .back-to-top {
+        display: none !important;
+    }
+
+    /* Layout adjustments */
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 10pt;
+    }
+
+    .bb-wrapper,
+    .bb-main {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        box-shadow: none !important;
+    }
+
+    .bb-main {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 0 !important;
+    }
+
+    .bb-content {
+        flex: 2.5 !important;
+        padding-right: 30px !important;
+        max-width: none !important;
+    }
+
+    .bb-sidebar {
+        flex: 1 !important;
+        padding-left: 20px !important;
+        border-left: 1px solid #eee !important;
+        margin-top: 0 !important;
+    }
+
+    /* Typography and Spacing */
+    .about-cv-container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .about-section {
+        margin-bottom: 12px !important;
+    }
+
+    .about-section-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .about-name {
+        font-size: 1.6rem !important;
+    }
+
+    .about-job {
+        margin-bottom: 10px !important;
+    }
+
+    /* Prevent breaking icons or headers across pages */
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    section,
+    .about-job {
+        page-break-inside: avoid;
+    }
+
+    /* Reset colors for printing */
+    .about-bold,
+    .about-section-title,
+    .about-name {
+        color: #00332a !important;
     }
 }
