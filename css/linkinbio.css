@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     /* Radial gradient: center glow to dark edges */
-    background: radial-gradient(circle at center, #549a04e8 0%, #000000 100%);
+    background: radial-gradient(circle at center, #027a32e8 65%, #000000 100%);
     min-height: 100vh;
 }
 
