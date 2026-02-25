@@ -232,7 +232,7 @@ body {
     margin-bottom: 20px;
 }
 
-.bb-content-divider {
+.bb-divider {
     border: 0;
     border-top: 1px solid var(--bb-border);
     margin: 20px 0;
@@ -383,7 +383,16 @@ article li strong {
     border-color: #00332a;
     color: #00332a;
     border: 1px solid #00332a;
+}
 
+.ibm-skills-badges {
+    margin: 30px 0;
+}
+
+.ibm-skills-badges img {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 .about-download-btn:hover {
